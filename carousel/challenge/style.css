@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  margin: 100px auto;
+  gap: 10px;
+  position: relative;
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+  stroke: #2b8a3e;
+}
+
+.btn {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: none;
+  border: 1px solid #2b8a3e;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--left {
+  left: 0;
+}
+
+.btn--right {
+  right: 0;
+}
+
+.btn:hover {
+  background-color: #2b8a3e;
+  color: #fff;
+}
+
+.btn:hover .btn-icon {
+  stroke: #fff;
+}
+
+.dot:link,
+.dot:visited {
+  color: #212529;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.dot:hover,
+.dot:active,
+.dot.page--current {
+  color: #fff;
+  background-color: #2b8a3e;
+}
