@@ -32,7 +32,7 @@ body {
 }
 
 .container {
-  width: 96rem;
+  max-width: 96rem;
   margin: 0 auto;
 }
 
